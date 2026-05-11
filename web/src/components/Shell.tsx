@@ -45,7 +45,7 @@ export function Shell({ children }: ShellProps) {
         <main className="flex-1 overflow-auto p-4">{children}</main>
         <nav
           className="flex items-center justify-around h-16 border-t shrink-0"
-          style={{ borderColor: "var(--line)", background: "var(--dock)" }}
+          style={{ borderColor: "var(--line)", background: "var(--panel)" }}
         >
           <a
             href="https://freeappstore.online"
