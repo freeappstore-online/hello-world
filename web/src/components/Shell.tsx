@@ -16,7 +16,19 @@ export function Shell({ children }: ShellProps) {
           <div className="p-6 font-bold text-lg" style={{ fontFamily: "Fraunces, serif" }}>
             Hello World
           </div>
-          <nav className="flex-1 px-4" />
+          <nav className="flex-1 px-4">
+            <div
+              className="flex items-center gap-3 px-3 py-2 text-sm font-medium"
+              style={{
+                color: "var(--accent)",
+                background: "color-mix(in srgb, var(--accent) 10%, transparent)",
+                borderRadius: "0.75rem",
+              }}
+            >
+              <span>👋</span>
+              <span>Home</span>
+            </div>
+          </nav>
           <div className="p-4 text-xs" style={{ color: "var(--muted)" }}>
             <a
               href="https://freeappstore.online"
@@ -47,15 +59,10 @@ export function Shell({ children }: ShellProps) {
           className="flex items-center justify-around h-16 border-t shrink-0"
           style={{ borderColor: "var(--line)", background: "var(--panel)" }}
         >
-          <a
-            href="https://freeappstore.online"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs"
-            style={{ color: "var(--muted)" }}
-          >
-            FreeAppStore
-          </a>
+          <div className="flex flex-col items-center gap-1" style={{ color: "var(--accent)" }}>
+            <span className="text-lg">👋</span>
+            <span className="text-[10px] font-medium">Home</span>
+          </div>
         </nav>
       </div>
     </>
