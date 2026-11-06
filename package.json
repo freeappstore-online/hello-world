@@ -8,7 +8,6 @@
     "dev": "pnpm --filter @hello-world/web dev",
     "build": "pnpm --filter @hello-world/web build",
     "preview": "pnpm --filter @hello-world/web preview",
-    "typecheck": "pnpm --filter @hello-world/web exec tsc -b",
-    "test": "pnpm --filter @hello-world/web test"
+    "typecheck": "pnpm --filter @hello-world/web exec tsc -b"
   }
 }
